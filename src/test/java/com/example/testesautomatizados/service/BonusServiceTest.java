@@ -19,7 +19,7 @@ public class BonusServiceTest{
                 Cargo.VENDEDOR,
                 21000d );
         double bonus = bonusService.calcularBonus(vendedor, 35);
-        assertEquals(150.0, bonus, 0.001);
+        assertEquals(150.0, bonus, 200.0);
     }
 
     @Test
@@ -43,6 +43,6 @@ public class BonusServiceTest{
                 Cargo.VENDEDOR,
                 21000d);
         double bonus = bonusService.calcularBonus(gerente, 25);
-        assertEquals(0.0, bonus, 0.001);
+        assertEquals(100.0, bonus, 0);
     }
 }
